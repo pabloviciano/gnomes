@@ -7,15 +7,16 @@
 //
 
 import UIKit
-import AlamofireImage
 import Alamofire
 
 public class CitizenCellViewModel {
-    private var citizen: Citizen
+    private let citizen: Citizen
     var view: CitizenCellView? = nil
+    let imageCacheService: ImageCacheService
     
-    init(citizen: Citizen) {
+    init(citizen: Citizen, imageCacheService: ImageCacheService) {
         self.citizen = citizen
+        self.imageCacheService = imageCacheService
     }
     
     public var name: String {
@@ -25,19 +26,11 @@ public class CitizenCellViewModel {
     }
     
     public func load() {
-        Alamofire.request(URL(string: citizen.thumbnail)!).responseImage { (response) in
-            print(response)
-            
-            switch(response.result){
-            case let .success(value):
-                guard let view = self.view else {
-                    return
-                }
-                view.onLoad(withImage: value)
-            default:
+        self.imageCacheService.getImage(identifier: citizen.thumbnail) { [unowned self] (image) in
+            guard let view = self.view else {
                 return
             }
+            view.onLoad(withImage: image)
         }
-        
     }
 }
