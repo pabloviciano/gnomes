@@ -15,11 +15,13 @@ class CitizensViewModel {
     let citizenGenerator: CitizenDataGenerator
     var router: CitizensRouter? = nil
     let imageCacheService: ImageCacheService
+    let cacheService: CacheService
     
-    init(view: CitizensView, citizenGenerator: CitizenDataGenerator, imageCacheService: ImageCacheService) {
+    init(view: CitizensView, citizenGenerator: CitizenDataGenerator, imageCacheService: ImageCacheService, cacheService: CacheService) {
         self.view = view
         self.citizenGenerator = citizenGenerator
         self.imageCacheService = imageCacheService
+        self.cacheService = cacheService
     }
     
     public func numberOfCitizens() -> Int {
@@ -33,11 +35,11 @@ class CitizensViewModel {
         guard let citizens = citizens, index >= 0 && index < citizens.count else {
             return nil
         }
-        return CitizenCellViewModel(citizen: citizens[index], imageCacheService: imageCacheService)
+        return CitizenCellViewModel(citizen: citizens[index], imageCacheService: imageCacheService, cacheService: cacheService)
     }
     
     public func load() {
-        CitizenParser.parse(generator: self.citizenGenerator) { (result) in
+        CitizenParser.parse(generator: self.citizenGenerator, cacheService:  self.cacheService) { (result) in
             switch(result){
                 case let .success(citizens):
                     self.citizens = citizens

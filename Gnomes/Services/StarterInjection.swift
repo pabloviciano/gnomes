@@ -12,7 +12,7 @@ public class StarterInjection {
     public static func initiate() -> CitizensRouter {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController = storyboard.instantiateViewController(withIdentifier: CitizenTableViewController.StoryboardId) as! CitizenTableViewController
-        let viewModel = CitizensViewModel(view: viewController, citizenGenerator: CitizenLocalGenerator(), imageCacheService: CacheServiceFactory.createImage())
+        let viewModel = CitizensViewModel(view: viewController, citizenGenerator: CitizenLocalGenerator(), imageCacheService: CacheServiceFactory.createImage(), cacheService: CacheServiceFactory.create())
         viewController.viewModel = viewModel
         let router = CitizensRouter(viewController: viewController, viewModel: viewModel)
         viewModel.router = router

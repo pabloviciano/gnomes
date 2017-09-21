@@ -49,7 +49,7 @@ internal class CacheServiceImpl: CacheService {
 
 internal class ImageCacheServiceImpl: ImageCacheService {
     var imagesCached = [String: ImageCachedObject]()
-    private static let maxImages = 30
+    private static let maxImages = 25
     
     func getImage(identifier: String, completion: @escaping (UIImage) -> ()) {
         if imagesCached.keys.contains(identifier) {
