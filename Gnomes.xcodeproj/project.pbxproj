@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3047DDDC1F743D2C00C641F1 /* LocalGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047DDDB1F743D2C00C641F1 /* LocalGenerator.swift */; };
+		3047DDDF1F743F4A00C641F1 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 30953DA11F72E69C0028E2B6 /* data.json */; };
+		3047DDE11F7441B900C641F1 /* CitizenCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3047DDE01F7441B900C641F1 /* CitizenCellView.swift */; };
 		307BD7061F72FD8500149B4F /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307BD7051F72FD8500149B4F /* CacheService.swift */; };
 		307BD7071F72FD9600149B4F /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307BD7051F72FD8500149B4F /* CacheService.swift */; };
 		30953D991F72DFD70028E2B6 /* Citizen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D981F72DFD70028E2B6 /* Citizen.swift */; };
@@ -17,8 +20,16 @@
 		30953DA31F72E7090028E2B6 /* CitizenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D9C1F72E5BC0028E2B6 /* CitizenParser.swift */; };
 		30953DA41F72E70B0028E2B6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D9A1F72E3BC0028E2B6 /* NetworkService.swift */; };
 		30953DA51F72E7800028E2B6 /* Citizen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D981F72DFD70028E2B6 /* Citizen.swift */; };
+		30D22DD31F7426CC00A83D9C /* CacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D22DD21F7426CC00A83D9C /* CacheServiceTests.swift */; };
+		30EC87A81F742AC7004633D9 /* CitizenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87A71F742AC7004633D9 /* CitizenTableViewCell.swift */; };
+		30EC87AA1F742B1A004633D9 /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87A91F742B1A004633D9 /* FriendCollectionViewCell.swift */; };
+		30EC87AC1F742BB5004633D9 /* CitizensViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87AB1F742BB5004633D9 /* CitizensViewModel.swift */; };
+		30EC87AE1F742BE4004633D9 /* CitizensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87AD1F742BE4004633D9 /* CitizensView.swift */; };
+		30EC87B01F74365A004633D9 /* CitizenCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87AF1F74365A004633D9 /* CitizenCellViewModel.swift */; };
+		30EC87B51F743835004633D9 /* CitizensRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87B41F743835004633D9 /* CitizensRouter.swift */; };
+		30EC87B71F74396B004633D9 /* StarterInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87B61F74396B004633D9 /* StarterInjection.swift */; };
 		30ED292C1F72DC4400FB9964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED292B1F72DC4400FB9964 /* AppDelegate.swift */; };
-		30ED292E1F72DC4400FB9964 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED292D1F72DC4400FB9964 /* ViewController.swift */; };
+		30ED292E1F72DC4400FB9964 /* CitizenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED292D1F72DC4400FB9964 /* CitizenTableViewController.swift */; };
 		30ED29311F72DC4400FB9964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ED292F1F72DC4400FB9964 /* Main.storyboard */; };
 		30ED29331F72DC4400FB9964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30ED29321F72DC4400FB9964 /* Assets.xcassets */; };
 		30ED29361F72DC4400FB9964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ED29341F72DC4400FB9964 /* LaunchScreen.storyboard */; };
@@ -38,15 +49,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3047DDDB1F743D2C00C641F1 /* LocalGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGenerator.swift; sourceTree = "<group>"; };
+		3047DDDE1F743D6300C641F1 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		3047DDE01F7441B900C641F1 /* CitizenCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenCellView.swift; sourceTree = "<group>"; };
 		307BD7051F72FD8500149B4F /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		30953D981F72DFD70028E2B6 /* Citizen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen.swift; sourceTree = "<group>"; };
 		30953D9A1F72E3BC0028E2B6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		30953D9C1F72E5BC0028E2B6 /* CitizenParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenParser.swift; sourceTree = "<group>"; };
 		30953D9E1F72E6780028E2B6 /* CitizenParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenParserTests.swift; sourceTree = "<group>"; };
 		30953DA11F72E69C0028E2B6 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		30D22DD21F7426CC00A83D9C /* CacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceTests.swift; sourceTree = "<group>"; };
+		30EC87A71F742AC7004633D9 /* CitizenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenTableViewCell.swift; sourceTree = "<group>"; };
+		30EC87A91F742B1A004633D9 /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
+		30EC87AB1F742BB5004633D9 /* CitizensViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizensViewModel.swift; sourceTree = "<group>"; };
+		30EC87AD1F742BE4004633D9 /* CitizensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizensView.swift; sourceTree = "<group>"; };
+		30EC87AF1F74365A004633D9 /* CitizenCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenCellViewModel.swift; sourceTree = "<group>"; };
+		30EC87B41F743835004633D9 /* CitizensRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizensRouter.swift; sourceTree = "<group>"; };
+		30EC87B61F74396B004633D9 /* StarterInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterInjection.swift; sourceTree = "<group>"; };
 		30ED29281F72DC4400FB9964 /* Gnomes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnomes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30ED292B1F72DC4400FB9964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30ED292D1F72DC4400FB9964 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30ED292D1F72DC4400FB9964 /* CitizenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenTableViewController.swift; sourceTree = "<group>"; };
 		30ED29301F72DC4400FB9964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30ED29321F72DC4400FB9964 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30ED29351F72DC4400FB9964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +113,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3047DDDD1F743D5600C641F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30953DA11F72E69C0028E2B6 /* data.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		30953D961F72DE790028E2B6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +135,8 @@
 				30953D9A1F72E3BC0028E2B6 /* NetworkService.swift */,
 				30953D9C1F72E5BC0028E2B6 /* CitizenParser.swift */,
 				307BD7051F72FD8500149B4F /* CacheService.swift */,
+				30EC87B61F74396B004633D9 /* StarterInjection.swift */,
+				3047DDDB1F743D2C00C641F1 /* LocalGenerator.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -112,9 +144,72 @@
 		30953DA01F72E6910028E2B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				30953DA11F72E69C0028E2B6 /* data.json */,
+				3047DDDE1F743D6300C641F1 /* data.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		30D22DD41F74289500A83D9C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				30EC87A61F742AB5004633D9 /* Cell */,
+				30ED292D1F72DC4400FB9964 /* CitizenTableViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		30D22DD51F74289900A83D9C /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				30D22DD61F7428A200A83D9C /* ListCitizen */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		30D22DD61F7428A200A83D9C /* ListCitizen */ = {
+			isa = PBXGroup;
+			children = (
+				30EC87B31F743822004633D9 /* router */,
+				30D22DD81F7428B400A83D9C /* protocols */,
+				30D22DD71F7428AD00A83D9C /* viewmodel */,
+				30D22DD41F74289500A83D9C /* views */,
+			);
+			path = ListCitizen;
+			sourceTree = "<group>";
+		};
+		30D22DD71F7428AD00A83D9C /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				30EC87AB1F742BB5004633D9 /* CitizensViewModel.swift */,
+				30EC87AF1F74365A004633D9 /* CitizenCellViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		30D22DD81F7428B400A83D9C /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				30EC87AD1F742BE4004633D9 /* CitizensView.swift */,
+				3047DDE01F7441B900C641F1 /* CitizenCellView.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		30EC87A61F742AB5004633D9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				30EC87A71F742AC7004633D9 /* CitizenTableViewCell.swift */,
+				30EC87A91F742B1A004633D9 /* FriendCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		30EC87B31F743822004633D9 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				30EC87B41F743835004633D9 /* CitizensRouter.swift */,
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 		30ED291F1F72DC4400FB9964 = {
@@ -140,10 +235,11 @@
 		30ED292A1F72DC4400FB9964 /* Gnomes */ = {
 			isa = PBXGroup;
 			children = (
+				3047DDDD1F743D5600C641F1 /* Resources */,
+				30D22DD51F74289900A83D9C /* Use Cases */,
 				30953D971F72DE840028E2B6 /* Services */,
 				30953D961F72DE790028E2B6 /* Models */,
 				30ED292B1F72DC4400FB9964 /* AppDelegate.swift */,
-				30ED292D1F72DC4400FB9964 /* ViewController.swift */,
 				30ED292F1F72DC4400FB9964 /* Main.storyboard */,
 				30ED29321F72DC4400FB9964 /* Assets.xcassets */,
 				30ED29341F72DC4400FB9964 /* LaunchScreen.storyboard */,
@@ -159,6 +255,7 @@
 				30ED29401F72DC4400FB9964 /* GnomesTests.swift */,
 				30ED29421F72DC4400FB9964 /* Info.plist */,
 				30953D9E1F72E6780028E2B6 /* CitizenParserTests.swift */,
+				30D22DD21F7426CC00A83D9C /* CacheServiceTests.swift */,
 			);
 			path = GnomesTests;
 			sourceTree = "<group>";
@@ -266,6 +363,7 @@
 				30ED29361F72DC4400FB9964 /* LaunchScreen.storyboard in Resources */,
 				30ED29331F72DC4400FB9964 /* Assets.xcassets in Resources */,
 				30ED29311F72DC4400FB9964 /* Main.storyboard in Resources */,
+				3047DDDF1F743F4A00C641F1 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,16 +435,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Gnomes/Pods-Gnomes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,12 +488,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30ED292E1F72DC4400FB9964 /* ViewController.swift in Sources */,
+				30EC87AA1F742B1A004633D9 /* FriendCollectionViewCell.swift in Sources */,
+				30EC87B71F74396B004633D9 /* StarterInjection.swift in Sources */,
+				30ED292E1F72DC4400FB9964 /* CitizenTableViewController.swift in Sources */,
+				3047DDDC1F743D2C00C641F1 /* LocalGenerator.swift in Sources */,
 				30953D9D1F72E5BC0028E2B6 /* CitizenParser.swift in Sources */,
+				30EC87AE1F742BE4004633D9 /* CitizensView.swift in Sources */,
 				30953D991F72DFD70028E2B6 /* Citizen.swift in Sources */,
+				30EC87AC1F742BB5004633D9 /* CitizensViewModel.swift in Sources */,
 				30953D9B1F72E3BC0028E2B6 /* NetworkService.swift in Sources */,
+				30EC87B01F74365A004633D9 /* CitizenCellViewModel.swift in Sources */,
 				307BD7061F72FD8500149B4F /* CacheService.swift in Sources */,
+				30EC87B51F743835004633D9 /* CitizensRouter.swift in Sources */,
+				3047DDE11F7441B900C641F1 /* CitizenCellView.swift in Sources */,
 				30ED292C1F72DC4400FB9964 /* AppDelegate.swift in Sources */,
+				30EC87A81F742AC7004633D9 /* CitizenTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +516,7 @@
 				30953DA41F72E70B0028E2B6 /* NetworkService.swift in Sources */,
 				307BD7071F72FD9600149B4F /* CacheService.swift in Sources */,
 				30953D9F1F72E6780028E2B6 /* CitizenParserTests.swift in Sources */,
+				30D22DD31F7426CC00A83D9C /* CacheServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

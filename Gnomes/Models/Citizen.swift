@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 public protocol Citizen {
     var id: Int {get}
