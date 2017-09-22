@@ -9,7 +9,9 @@
 import Foundation
 
 public class CitizenLocalGenerator: CitizenDataGenerator {
-    
+    init() {
+        
+    }
     public func getData(completion: @escaping (String?) -> Void) {
         completion(try! String(contentsOfFile: Bundle.main.path(forResource: "data", ofType: "json")!))
     }

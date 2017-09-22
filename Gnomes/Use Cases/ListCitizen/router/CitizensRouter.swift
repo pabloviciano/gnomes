@@ -17,7 +17,7 @@ public class CitizensRouter {
         
         let storyboard = UIStoryboard(name: "ListCitizen", bundle: Bundle.main)
         self.viewController = storyboard.instantiateViewController(withIdentifier: CitizenTableViewController.StoryboardId) as! CitizenTableViewController
-        self.viewModel = CitizensViewModel(view: viewController, citizenGenerator: CitizenLocalGenerator(), imageCacheService: CacheServiceFactory.createImage(), cacheService: CacheServiceFactory.create())
+        self.viewModel = CitizensViewModel(view: viewController, citizenGenerator: citizenGenerator, imageCacheService: CacheServiceFactory.createImage(), cacheService: CacheServiceFactory.create())
         self.viewController.viewModel = viewModel
         self.viewModel.router = self
     }
