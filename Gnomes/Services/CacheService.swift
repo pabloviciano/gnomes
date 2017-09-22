@@ -71,7 +71,9 @@ internal class ImageCacheServiceImpl: ImageCacheService {
                 completion(image)
             }else {
                 downloadImage(forKey: identifier, completion: { [unowned self] (image) in
-                    self.save(image: image, key: identifier)
+                    DispatchQueue.global(qos: .utility).async {
+                        self.save(image: image, key: identifier)
+                    }
                     self.updateCacheWithImage(image: image, forKey: identifier)
                     completion(image)
                 })

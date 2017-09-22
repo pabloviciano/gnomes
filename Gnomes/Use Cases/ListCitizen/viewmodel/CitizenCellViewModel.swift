@@ -28,11 +28,16 @@ public class CitizenCellViewModel {
     }
     
     public func load() {
-        self.imageCacheService.getImage(identifier: citizen.thumbnail) { [unowned self] (image) in
-            guard let view = self.view else {
-                return
+        DispatchQueue.global(qos: .utility).async { 
+            self.imageCacheService.getImage(identifier: self.citizen.thumbnail) { [weak self] (image) in
+                guard let viewModel = self,  let view = viewModel.view else {
+                    return
+                }
+                DispatchQueue.main.async {
+                    view.onLoad(withImage: image)
+                }
             }
-            view.onLoad(withImage: image)
         }
+        
     }
 }
