@@ -55,15 +55,14 @@ internal class ImageCacheServiceImpl: ImageCacheService {
         if imagesCached.keys.contains(identifier) {
             completion(imagesCached[identifier]!.image)
         }else {
-            if imagesCached.count >= ImageCacheServiceImpl.maxImages {
-                let maxOld = imagesCached.values.max(by: { (object, object1) -> Bool in
+            if self.imagesCached.count >= ImageCacheServiceImpl.maxImages {
+                let maxOld = self.imagesCached.values.max(by: { (object, object1) -> Bool in
                     object.date < object1.date
                 })
                 if let maxOld = maxOld {
-                    imagesCached.removeValue(forKey: maxOld.key)
+                    self.imagesCached.removeValue(forKey: maxOld.key)
                 }
             }
-            
             let image = load(byKey: identifier)
             
             if let image = image {
@@ -82,10 +81,10 @@ internal class ImageCacheServiceImpl: ImageCacheService {
     }
     
     private func updateCacheWithImage(image: UIImage, forKey key: String) {
-        if imagesCached.keys.contains(key) {
-            imagesCached.removeValue(forKey: key)
+        if self.imagesCached.keys.contains(key) {
+            self.imagesCached.removeValue(forKey: key)
         }
-        imagesCached.updateValue(ImageCachedObject(key: key, image: image, date: Date()), forKey: key)
+        self.imagesCached.updateValue(ImageCachedObject(key: key, image: image, date: Date()), forKey: key)
     }
     
     private func downloadImage(forKey key: String, completion: @escaping (UIImage) -> ()) {

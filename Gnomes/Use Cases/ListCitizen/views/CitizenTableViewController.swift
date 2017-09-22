@@ -40,7 +40,10 @@ class CitizenTableViewController: UITableViewController, CitizensView {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CitizenTableViewCell.CellIdentifier) as! CitizenTableViewCell
-        
+        if let viewModel = cell.viewModel {
+            viewModel.view = nil
+        }
+        cell.viewModel = nil
         
         return cell
     }
