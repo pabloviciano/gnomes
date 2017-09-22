@@ -24,6 +24,10 @@ class CitizensViewModel {
         self.cacheService = cacheService
     }
     
+    public func name() -> String {
+        return "Gnomes"
+    }
+    
     public func numberOfCitizens() -> Int {
         guard let citizens = citizens else {
             return 0
@@ -52,5 +56,14 @@ class CitizensViewModel {
             }
         }
     }
+    
+    public func selectCitizen(at index: Int) {
+        guard let router = router, let citizens = citizens, index >= 0 && index < citizens.count else {
+            return
+        }
+        router.navigateToDetailCitizen(citizen: citizens[index])
+    }
+    
+
     
 }

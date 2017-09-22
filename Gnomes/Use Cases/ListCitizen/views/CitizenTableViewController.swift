@@ -18,6 +18,7 @@ class CitizenTableViewController: UITableViewController, CitizensView {
         guard let viewModel = viewModel else {
             return
         }
+        self.title = viewModel.name()
         viewModel.load()
     }
 
@@ -51,6 +52,13 @@ class CitizenTableViewController: UITableViewController, CitizensView {
         }
         cellViewModel.view = citizenCell
         citizenCell.configure(with: cellViewModel)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let viewModel = viewModel else {
+            return
+        }
+        viewModel.selectCitizen(at: indexPath.row)
     }
     
     func onLoadEvent() {

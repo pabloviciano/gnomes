@@ -13,13 +13,20 @@
 		307BD7061F72FD8500149B4F /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307BD7051F72FD8500149B4F /* CacheService.swift */; };
 		307BD7071F72FD9600149B4F /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307BD7051F72FD8500149B4F /* CacheService.swift */; };
 		30953D991F72DFD70028E2B6 /* Citizen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D981F72DFD70028E2B6 /* Citizen.swift */; };
-		30953D9B1F72E3BC0028E2B6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D9A1F72E3BC0028E2B6 /* NetworkService.swift */; };
+		30953D9B1F72E3BC0028E2B6 /* NetworkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D9A1F72E3BC0028E2B6 /* NetworkGenerator.swift */; };
 		30953D9D1F72E5BC0028E2B6 /* CitizenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D9C1F72E5BC0028E2B6 /* CitizenParser.swift */; };
 		30953D9F1F72E6780028E2B6 /* CitizenParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D9E1F72E6780028E2B6 /* CitizenParserTests.swift */; };
 		30953DA21F72E6AC0028E2B6 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 30953DA11F72E69C0028E2B6 /* data.json */; };
 		30953DA31F72E7090028E2B6 /* CitizenParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D9C1F72E5BC0028E2B6 /* CitizenParser.swift */; };
-		30953DA41F72E70B0028E2B6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D9A1F72E3BC0028E2B6 /* NetworkService.swift */; };
+		30953DA41F72E70B0028E2B6 /* NetworkGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D9A1F72E3BC0028E2B6 /* NetworkGenerator.swift */; };
 		30953DA51F72E7800028E2B6 /* Citizen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30953D981F72DFD70028E2B6 /* Citizen.swift */; };
+		30CF6FF41F7567B100F447DA /* DetailCitizen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30CF6FF31F7567B100F447DA /* DetailCitizen.storyboard */; };
+		30CF6FF61F756AF400F447DA /* DetailCitizenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF6FF51F756AF400F447DA /* DetailCitizenViewController.swift */; };
+		30CF6FF81F756B5C00F447DA /* DetailCitizenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF6FF71F756B5C00F447DA /* DetailCitizenViewModel.swift */; };
+		30CF6FFA1F756C0700F447DA /* DetailCitizenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF6FF91F756C0700F447DA /* DetailCitizenView.swift */; };
+		30CF6FFC1F756D3400F447DA /* DetailCitizenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF6FFB1F756D3400F447DA /* DetailCitizenRouter.swift */; };
+		30CF6FFF1F7574A300F447DA /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF6FFE1F7574A300F447DA /* JobTableViewCell.swift */; };
+		30CF70011F75784100F447DA /* JobCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CF70001F75784100F447DA /* JobCellViewModel.swift */; };
 		30D22DD31F7426CC00A83D9C /* CacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D22DD21F7426CC00A83D9C /* CacheServiceTests.swift */; };
 		30EC87A81F742AC7004633D9 /* CitizenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87A71F742AC7004633D9 /* CitizenTableViewCell.swift */; };
 		30EC87AA1F742B1A004633D9 /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87A91F742B1A004633D9 /* FriendCollectionViewCell.swift */; };
@@ -30,7 +37,7 @@
 		30EC87B71F74396B004633D9 /* StarterInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EC87B61F74396B004633D9 /* StarterInjection.swift */; };
 		30ED292C1F72DC4400FB9964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED292B1F72DC4400FB9964 /* AppDelegate.swift */; };
 		30ED292E1F72DC4400FB9964 /* CitizenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED292D1F72DC4400FB9964 /* CitizenTableViewController.swift */; };
-		30ED29311F72DC4400FB9964 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ED292F1F72DC4400FB9964 /* Main.storyboard */; };
+		30ED29311F72DC4400FB9964 /* ListCitizen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ED292F1F72DC4400FB9964 /* ListCitizen.storyboard */; };
 		30ED29331F72DC4400FB9964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30ED29321F72DC4400FB9964 /* Assets.xcassets */; };
 		30ED29361F72DC4400FB9964 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30ED29341F72DC4400FB9964 /* LaunchScreen.storyboard */; };
 		30ED29411F72DC4400FB9964 /* GnomesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30ED29401F72DC4400FB9964 /* GnomesTests.swift */; };
@@ -54,10 +61,17 @@
 		3047DDE01F7441B900C641F1 /* CitizenCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenCellView.swift; sourceTree = "<group>"; };
 		307BD7051F72FD8500149B4F /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		30953D981F72DFD70028E2B6 /* Citizen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citizen.swift; sourceTree = "<group>"; };
-		30953D9A1F72E3BC0028E2B6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		30953D9A1F72E3BC0028E2B6 /* NetworkGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGenerator.swift; sourceTree = "<group>"; };
 		30953D9C1F72E5BC0028E2B6 /* CitizenParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenParser.swift; sourceTree = "<group>"; };
 		30953D9E1F72E6780028E2B6 /* CitizenParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenParserTests.swift; sourceTree = "<group>"; };
 		30953DA11F72E69C0028E2B6 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		30CF6FF31F7567B100F447DA /* DetailCitizen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailCitizen.storyboard; sourceTree = "<group>"; };
+		30CF6FF51F756AF400F447DA /* DetailCitizenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCitizenViewController.swift; sourceTree = "<group>"; };
+		30CF6FF71F756B5C00F447DA /* DetailCitizenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCitizenViewModel.swift; sourceTree = "<group>"; };
+		30CF6FF91F756C0700F447DA /* DetailCitizenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCitizenView.swift; sourceTree = "<group>"; };
+		30CF6FFB1F756D3400F447DA /* DetailCitizenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCitizenRouter.swift; sourceTree = "<group>"; };
+		30CF6FFE1F7574A300F447DA /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		30CF70001F75784100F447DA /* JobCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobCellViewModel.swift; sourceTree = "<group>"; };
 		30D22DD21F7426CC00A83D9C /* CacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceTests.swift; sourceTree = "<group>"; };
 		30EC87A71F742AC7004633D9 /* CitizenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenTableViewCell.swift; sourceTree = "<group>"; };
 		30EC87A91F742B1A004633D9 /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -69,7 +83,7 @@
 		30ED29281F72DC4400FB9964 /* Gnomes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gnomes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30ED292B1F72DC4400FB9964 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30ED292D1F72DC4400FB9964 /* CitizenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitizenTableViewController.swift; sourceTree = "<group>"; };
-		30ED29301F72DC4400FB9964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30ED29301F72DC4400FB9964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ListCitizen.storyboard; sourceTree = "<group>"; };
 		30ED29321F72DC4400FB9964 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30ED29351F72DC4400FB9964 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30ED29371F72DC4400FB9964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -132,7 +146,7 @@
 		30953D971F72DE840028E2B6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				30953D9A1F72E3BC0028E2B6 /* NetworkService.swift */,
+				30953D9A1F72E3BC0028E2B6 /* NetworkGenerator.swift */,
 				30953D9C1F72E5BC0028E2B6 /* CitizenParser.swift */,
 				307BD7051F72FD8500149B4F /* CacheService.swift */,
 				30EC87B61F74396B004633D9 /* StarterInjection.swift */,
@@ -149,6 +163,76 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		30CF6FEC1F7566F400F447DA /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				30ED292F1F72DC4400FB9964 /* ListCitizen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		30CF6FED1F75676400F447DA /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				30CF6FF21F75679200F447DA /* router */,
+				30CF6FF11F75678900F447DA /* protocols */,
+				30CF6FF01F75678300F447DA /* viewmodel */,
+				30CF6FEF1F75677200F447DA /* view */,
+				30CF6FEE1F75676A00F447DA /* storyboard */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		30CF6FEE1F75676A00F447DA /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				30CF6FF31F7567B100F447DA /* DetailCitizen.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		30CF6FEF1F75677200F447DA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				30CF6FFD1F75748F00F447DA /* Cell */,
+				30CF6FF51F756AF400F447DA /* DetailCitizenViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		30CF6FF01F75678300F447DA /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				30CF6FF71F756B5C00F447DA /* DetailCitizenViewModel.swift */,
+				30CF70001F75784100F447DA /* JobCellViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		30CF6FF11F75678900F447DA /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				30CF6FF91F756C0700F447DA /* DetailCitizenView.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		30CF6FF21F75679200F447DA /* router */ = {
+			isa = PBXGroup;
+			children = (
+				30CF6FFB1F756D3400F447DA /* DetailCitizenRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		30CF6FFD1F75748F00F447DA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				30CF6FFE1F7574A300F447DA /* JobTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		30D22DD41F74289500A83D9C /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +245,7 @@
 		30D22DD51F74289900A83D9C /* Use Cases */ = {
 			isa = PBXGroup;
 			children = (
+				30CF6FED1F75676400F447DA /* Detail */,
 				30D22DD61F7428A200A83D9C /* ListCitizen */,
 			);
 			path = "Use Cases";
@@ -173,6 +258,7 @@
 				30D22DD81F7428B400A83D9C /* protocols */,
 				30D22DD71F7428AD00A83D9C /* viewmodel */,
 				30D22DD41F74289500A83D9C /* views */,
+				30CF6FEC1F7566F400F447DA /* storyboard */,
 			);
 			path = ListCitizen;
 			sourceTree = "<group>";
@@ -240,7 +326,6 @@
 				30953D971F72DE840028E2B6 /* Services */,
 				30953D961F72DE790028E2B6 /* Models */,
 				30ED292B1F72DC4400FB9964 /* AppDelegate.swift */,
-				30ED292F1F72DC4400FB9964 /* Main.storyboard */,
 				30ED29321F72DC4400FB9964 /* Assets.xcassets */,
 				30ED29341F72DC4400FB9964 /* LaunchScreen.storyboard */,
 				30ED29371F72DC4400FB9964 /* Info.plist */,
@@ -362,7 +447,8 @@
 			files = (
 				30ED29361F72DC4400FB9964 /* LaunchScreen.storyboard in Resources */,
 				30ED29331F72DC4400FB9964 /* Assets.xcassets in Resources */,
-				30ED29311F72DC4400FB9964 /* Main.storyboard in Resources */,
+				30CF6FF41F7567B100F447DA /* DetailCitizen.storyboard in Resources */,
+				30ED29311F72DC4400FB9964 /* ListCitizen.storyboard in Resources */,
 				3047DDDF1F743F4A00C641F1 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,19 +574,25 @@
 			files = (
 				30EC87AA1F742B1A004633D9 /* FriendCollectionViewCell.swift in Sources */,
 				30EC87B71F74396B004633D9 /* StarterInjection.swift in Sources */,
+				30CF6FFA1F756C0700F447DA /* DetailCitizenView.swift in Sources */,
 				30ED292E1F72DC4400FB9964 /* CitizenTableViewController.swift in Sources */,
+				30CF6FFC1F756D3400F447DA /* DetailCitizenRouter.swift in Sources */,
 				3047DDDC1F743D2C00C641F1 /* LocalGenerator.swift in Sources */,
 				30953D9D1F72E5BC0028E2B6 /* CitizenParser.swift in Sources */,
 				30EC87AE1F742BE4004633D9 /* CitizensView.swift in Sources */,
 				30953D991F72DFD70028E2B6 /* Citizen.swift in Sources */,
 				30EC87AC1F742BB5004633D9 /* CitizensViewModel.swift in Sources */,
-				30953D9B1F72E3BC0028E2B6 /* NetworkService.swift in Sources */,
+				30953D9B1F72E3BC0028E2B6 /* NetworkGenerator.swift in Sources */,
+				30CF70011F75784100F447DA /* JobCellViewModel.swift in Sources */,
 				30EC87B01F74365A004633D9 /* CitizenCellViewModel.swift in Sources */,
 				307BD7061F72FD8500149B4F /* CacheService.swift in Sources */,
 				30EC87B51F743835004633D9 /* CitizensRouter.swift in Sources */,
+				30CF6FF61F756AF400F447DA /* DetailCitizenViewController.swift in Sources */,
 				3047DDE11F7441B900C641F1 /* CitizenCellView.swift in Sources */,
 				30ED292C1F72DC4400FB9964 /* AppDelegate.swift in Sources */,
 				30EC87A81F742AC7004633D9 /* CitizenTableViewCell.swift in Sources */,
+				30CF6FF81F756B5C00F447DA /* DetailCitizenViewModel.swift in Sources */,
+				30CF6FFF1F7574A300F447DA /* JobTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +603,7 @@
 				30953DA51F72E7800028E2B6 /* Citizen.swift in Sources */,
 				30ED29411F72DC4400FB9964 /* GnomesTests.swift in Sources */,
 				30953DA31F72E7090028E2B6 /* CitizenParser.swift in Sources */,
-				30953DA41F72E70B0028E2B6 /* NetworkService.swift in Sources */,
+				30953DA41F72E70B0028E2B6 /* NetworkGenerator.swift in Sources */,
 				307BD7071F72FD9600149B4F /* CacheService.swift in Sources */,
 				30953D9F1F72E6780028E2B6 /* CitizenParserTests.swift in Sources */,
 				30D22DD31F7426CC00A83D9C /* CacheServiceTests.swift in Sources */,
@@ -529,12 +621,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		30ED292F1F72DC4400FB9964 /* Main.storyboard */ = {
+		30ED292F1F72DC4400FB9964 /* ListCitizen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				30ED29301F72DC4400FB9964 /* Base */,
 			);
-			name = Main.storyboard;
+			name = ListCitizen.storyboard;
 			sourceTree = "<group>";
 		};
 		30ED29341F72DC4400FB9964 /* LaunchScreen.storyboard */ = {

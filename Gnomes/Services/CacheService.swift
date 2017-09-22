@@ -39,7 +39,7 @@ internal class CacheServiceImpl: CacheService {
     }
     
     public func getCitizen(byKey: String) -> Citizen? {
-        return cache.values.first(where: { $0.name == byKey })
+        return cache[byKey]
     }
     
     public func removeCitizen(citizen: Citizen) {

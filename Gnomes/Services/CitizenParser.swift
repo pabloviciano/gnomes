@@ -10,34 +10,40 @@ import Foundation
 import Result
 
 public protocol CitizenDataGenerator {
-    var getData: String { get }
+    func getData(completion: @escaping (String?) -> Void)
 }
 
 class CitizenParser {
     static func parse(generator: CitizenDataGenerator, cacheService: CacheService? = nil, completion:@escaping (Result<[Citizen], CitizenParserErrors>) -> Void) {
-        do {
-            let jsonOpt = try JSONSerialization.jsonObject(with: generator.getData.data(using: .utf8)!) as? [String: Any]
-            guard let json = jsonOpt else {
-                return completion(.failure(CitizenParserErrors.BadFormat))
+        
+        generator.getData { (result) in
+            guard let result = result else {
+                return
             }
-            guard let citizens = json["Brastlewark"] as? [[String:Any]] else {
-                return completion(.failure(CitizenParserErrors.BadFormat))
-            }
-            var citizensArray = [Citizen]()
-            for citizenData in citizens {
-                switch CitizenParser.parseCitizen(data: citizenData){
-                case let .success(citizen):
-                    citizensArray.append(citizen)
-                    if let cacheService = cacheService {
-                        cacheService.insertCitizen(citizen: citizen)
-                    }
-                default:
-                    continue
+            do {
+                let jsonOpt = try JSONSerialization.jsonObject(with: result.data(using: .utf8)!) as? [String: Any]
+                guard let json = jsonOpt else {
+                    return completion(.failure(CitizenParserErrors.BadFormat))
                 }
+                guard let citizens = json["Brastlewark"] as? [[String:Any]] else {
+                    return completion(.failure(CitizenParserErrors.BadFormat))
+                }
+                var citizensArray = [Citizen]()
+                for citizenData in citizens {
+                    switch CitizenParser.parseCitizen(data: citizenData){
+                    case let .success(citizen):
+                        citizensArray.append(citizen)
+                        if let cacheService = cacheService {
+                            cacheService.insertCitizen(citizen: citizen)
+                        }
+                    default:
+                        continue
+                    }
+                }
+                completion(.success(citizensArray))
+            } catch  {
+                completion(.failure(CitizenParserErrors.BadFormat))
             }
-            completion(.success(citizensArray))
-        } catch  {
-            completion(.failure(CitizenParserErrors.BadFormat))
         }
     }
     
